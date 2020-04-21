@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: reshawn/un-blog
   branch: master
 
 media_folder: "static/media"
