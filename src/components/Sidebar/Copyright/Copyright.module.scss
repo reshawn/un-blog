@@ -1,0 +1,12 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.light-copyright {
+  color: lighten($color-gray, 18%);
+  font-size: $typographic-small-font-size;
+}
+
+.dark-copyright {
+  color: darken($dark-color-gray, 38%);
+  font-size: $typographic-small-font-size;
+}

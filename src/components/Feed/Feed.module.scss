@@ -1,0 +1,120 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.feed {
+  &__item {
+    @include margin-bottom(1.25);
+
+    &:last-child {
+      @include margin-bottom(.5);
+    }
+
+    &-title {
+      font-size: $typographic-base-font-size * 1.6875;
+      @include line-height(1.5);
+      @include margin-top(0);
+      @include margin-bottom(.5);
+
+      &-light-link {
+        color: $title-color;
+
+        &:hover,
+        &:focus {
+          color: $title-color;
+          border-bottom: 1px solid $title-color;
+        }
+
+      }
+      &-dark-link {
+        color: $dark-title-color;
+
+        &:hover,
+        &:focus {
+          color: $dark-title-color;
+          border-bottom: 1px solid $dark-title-color;
+        }
+
+      }
+
+    }
+
+    &-description {
+      font-size: $typographic-base-font-size;
+      @include line-height(1);
+      @include margin-bottom(.75);
+    }
+
+    &-meta {
+      &-light-time {
+        font-size: $typographic-small-font-size;
+        color: $color-base;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &-dark-time {
+        font-size: $typographic-small-font-size;
+        color: $dark-color-base;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      &-divider {
+        margin: 0 5px;
+      }
+
+      &-category {
+        &-light-link {
+          font-size: $typographic-small-font-size;
+          color: $color-secondary;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $color-primary;
+          }
+
+        }
+        &-dark-link {
+          font-size: $typographic-small-font-size;
+          color: $dark-color-secondary;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $dark-color-primary;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-light-readmore {
+      font-size: $typographic-base-font-size;
+      color: $color-primary;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+      }
+
+    }
+    &-dark-readmore {
+      font-size: $typographic-base-font-size;
+      color: $dark-color-primary;
+
+      &:hover,
+      &:focus {
+        color: $dark-color-primary;
+        border-bottom: 1px solid $dark-color-primary;
+      }
+
+    }
+
+  }
+
+}

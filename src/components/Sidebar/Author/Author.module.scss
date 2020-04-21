@@ -1,0 +1,52 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.author {
+  &__photo {
+    display: inline-block;
+    margin-bottom: 0;
+    border-radius: 50%;
+    background-clip: padding-box
+  }
+
+  &__title {
+    font-size: $typographic-base-font-size * 1.125;
+    font-weight: 800;
+    @include line-height(1.125);
+    @include margin(.5, 0, .5, 0);
+
+    &-light-link {
+      color: $title-color;
+
+      &:hover,
+      &:focus {
+        color: $title-color
+      }
+
+    }
+
+    &-dark-link {
+      color: $dark-title-color;
+
+      &:hover,
+      &:focus {
+        color: $dark-title-color
+      }
+
+    }
+
+  }
+
+  &__light-subtitle {
+    color: $color-gray;
+    @include line-height(1);
+    @include margin-bottom(1)
+  }
+
+  &__dark-subtitle {
+    color: $dark-color-gray;
+    @include line-height(1);
+    @include margin-bottom(1)
+  }
+
+}
