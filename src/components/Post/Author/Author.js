@@ -13,14 +13,14 @@ const Author = () => {
     <div className={styles[value ? 'dark-author' : 'light-author']}>
       <p className={styles[value ? 'dark-author__bio  ' : 'light-author__bio']}>
         {author.bio}
-        <a
+        {/* <a
           className={styles[value ? 'dark-author__bio-twitter' : 'light-author__bio-twitter']}
           href={getContactHref('twitter', author.contacts.twitter)}
           rel="noopener noreferrer"
           target="_blank"
         >
           <strong>{author.name}</strong> on Twitter
-        </a>
+        </a> */}
       </p>
     </div>
   );

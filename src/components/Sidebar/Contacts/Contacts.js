@@ -16,7 +16,7 @@ const Contacts = ({ contacts }: Props) => {
   const { value } = useDarkMode(false);
   return (
     <div className={styles['contacts']}>
-      <ul className={styles['contacts__list']}>
+      {/* <ul className={styles['contacts__list']}>
         {Object.keys(contacts).map((name) => (
           <li className={styles[value ? 'contacts__list-dark-item' : 'contacts__list-light-item']} key={name}>
             <a
@@ -29,7 +29,7 @@ const Contacts = ({ contacts }: Props) => {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

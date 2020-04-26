@@ -3,10 +3,10 @@
  */
 
 // Light Colors
-$title-color: #9F1A1A ;
+$title-color: #0183FF ;
 $color-base: #222;
-$color-primary: #1A9F9F;
-$color-secondary: #DC8329;
+$color-primary: #ff7d01;
+$color-secondary: #ff7d01;
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
@@ -14,11 +14,11 @@ $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
 //Dark Colors
-$dark-title-color: pink;
+$dark-title-color: #add7ff;
 $dark-background: #1a1919;
 $dark-color-base: #dfdfdf;
-$dark-color-primary: #C0FFF4;
-$dark-color-secondary: #FFD5C0;
+$dark-color-primary: #ffd5ad;
+$dark-color-secondary: #ffd5ad;
 
 $dark-color-white: $dark-background; //lol
 $dark-color-gray: lighten($dark-color-base, 60%);

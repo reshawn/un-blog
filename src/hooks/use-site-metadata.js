@@ -11,10 +11,6 @@ const useSiteMetadata = () => {
               name
               bio
               photo
-              contacts {
-                email
-                twitter
-              }
             }
             menu {
               label
